@@ -24,25 +24,15 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		042EDA292D6CB14F002F6235 /* Chat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Chat.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		042EDA392D6CB150002F6235 /* ChatTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ChatTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		042EDA432D6CB150002F6235 /* ChatUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ChatUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		042EDA7A2D6CC12F002F6235 /* Chat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; name = Chat.app; path = "/Users/mac/Desktop/Project/XCode/Chat/build/Debug-iphoneos/Chat.app"; sourceTree = "<absolute>"; };
+		042EDA7B2D6CC12F002F6235 /* ChatTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = ChatTests.xctest; path = "/Users/mac/Desktop/Project/XCode/Chat/build/Debug-iphoneos/Chat.app/PlugIns/ChatTests.xctest"; sourceTree = "<absolute>"; };
+		042EDA7C2D6CC12F002F6235 /* ChatUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = ChatUITests.xctest; path = "/Users/mac/Desktop/Project/XCode/Chat/build/Debug-iphoneos/ChatUITests-Runner.app/PlugIns/ChatUITests.xctest"; sourceTree = "<absolute>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		042EDA2B2D6CB14F002F6235 /* Chat */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			path = Chat;
-			sourceTree = "<group>";
-		};
-		042EDA3C2D6CB150002F6235 /* ChatTests */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = ChatTests;
-			sourceTree = "<group>";
-		};
-		042EDA462D6CB150002F6235 /* ChatUITests */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = ChatUITests;
 			sourceTree = "<group>";
 		};
 /* End PBXFileSystemSynchronizedRootGroup section */
@@ -76,20 +66,7 @@
 			isa = PBXGroup;
 			children = (
 				042EDA2B2D6CB14F002F6235 /* Chat */,
-				042EDA3C2D6CB150002F6235 /* ChatTests */,
-				042EDA462D6CB150002F6235 /* ChatUITests */,
-				042EDA2A2D6CB14F002F6235 /* Products */,
 			);
-			sourceTree = "<group>";
-		};
-		042EDA2A2D6CB14F002F6235 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				042EDA292D6CB14F002F6235 /* Chat.app */,
-				042EDA392D6CB150002F6235 /* ChatTests.xctest */,
-				042EDA432D6CB150002F6235 /* ChatUITests.xctest */,
-			);
-			name = Products;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -114,7 +91,7 @@
 			packageProductDependencies = (
 			);
 			productName = Chat;
-			productReference = 042EDA292D6CB14F002F6235 /* Chat.app */;
+			productReference = 042EDA7A2D6CC12F002F6235 /* Chat.app */;
 			productType = "com.apple.product-type.application";
 		};
 		042EDA382D6CB150002F6235 /* ChatTests */ = {
@@ -130,14 +107,11 @@
 			dependencies = (
 				042EDA3B2D6CB150002F6235 /* PBXTargetDependency */,
 			);
-			fileSystemSynchronizedGroups = (
-				042EDA3C2D6CB150002F6235 /* ChatTests */,
-			);
 			name = ChatTests;
 			packageProductDependencies = (
 			);
 			productName = ChatTests;
-			productReference = 042EDA392D6CB150002F6235 /* ChatTests.xctest */;
+			productReference = 042EDA7B2D6CC12F002F6235 /* ChatTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 		042EDA422D6CB150002F6235 /* ChatUITests */ = {
@@ -153,14 +127,11 @@
 			dependencies = (
 				042EDA452D6CB150002F6235 /* PBXTargetDependency */,
 			);
-			fileSystemSynchronizedGroups = (
-				042EDA462D6CB150002F6235 /* ChatUITests */,
-			);
 			name = ChatUITests;
 			packageProductDependencies = (
 			);
 			productName = ChatUITests;
-			productReference = 042EDA432D6CB150002F6235 /* ChatUITests.xctest */;
+			productReference = 042EDA7C2D6CC12F002F6235 /* ChatUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
@@ -178,10 +149,12 @@
 					};
 					042EDA382D6CB150002F6235 = {
 						CreatedOnToolsVersion = 16.2;
+						LastSwiftMigration = 1620;
 						TestTargetID = 042EDA282D6CB14F002F6235;
 					};
 					042EDA422D6CB150002F6235 = {
 						CreatedOnToolsVersion = 16.2;
+						LastSwiftMigration = 1620;
 						TestTargetID = 042EDA282D6CB14F002F6235;
 					};
 				};
@@ -196,7 +169,7 @@
 			mainGroup = 042EDA202D6CB14F002F6235;
 			minimizedProjectReferenceProxies = 1;
 			preferredProjectObjectVersion = 77;
-			productRefGroup = 042EDA2A2D6CB14F002F6235 /* Products */;
+			productRefGroup = 042EDA202D6CB14F002F6235;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
@@ -450,6 +423,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = J447P4TR82;
@@ -459,6 +433,8 @@
 				PRODUCT_BUNDLE_IDENTIFIER = azyasaxi.ChatTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_OBJC_BRIDGING_HEADER = "Chat/ChatTests-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Chat.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Chat";
@@ -469,6 +445,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = J447P4TR82;
@@ -478,6 +455,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = azyasaxi.ChatTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_OBJC_BRIDGING_HEADER = "Chat/ChatTests-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Chat.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Chat";
@@ -487,6 +465,7 @@
 		042EDA542D6CB150002F6235 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = J447P4TR82;
@@ -495,6 +474,8 @@
 				PRODUCT_BUNDLE_IDENTIFIER = azyasaxi.ChatUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_OBJC_BRIDGING_HEADER = "Chat/ChatUITests-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_TARGET_NAME = Chat;
@@ -504,6 +485,7 @@
 		042EDA552D6CB150002F6235 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = J447P4TR82;
@@ -512,6 +494,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = azyasaxi.ChatUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_OBJC_BRIDGING_HEADER = "Chat/ChatUITests-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_TARGET_NAME = Chat;
